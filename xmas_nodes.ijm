@@ -1,4 +1,5 @@
 print("Image form https://twitter.com/the_Node");
+selectImage("nodes.jpg");
 setBatchMode(true);
 cols = newArray('red','green','blue','cyan','magenta','yellow','white');
 run("Duplicate...", " ");

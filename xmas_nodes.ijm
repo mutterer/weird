@@ -1,4 +1,5 @@
 print("Image form https://twitter.com/the_Node");
+print("Animation script version by Nico DF @nevermore_78");
 run("Select None");
 nCircles = 48;
 selectImage("nodes.jpg");

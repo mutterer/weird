@@ -6,7 +6,7 @@ size=10;
 newImage("pattern", "8-bit white", 140, 700, 1);
 for (i=0;i<10000;i++) {
 setColor(255*random);
-makeOval(-10+150*random,800*random,size+5*random,size+5*random);
+makeOval(-10+160*random,-10+720*random,size+5*random,size+5*random);
 fill();
 }
 run("Select None");

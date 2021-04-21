@@ -3,3 +3,4 @@ makeOval(508, 160, 380, 366);
 setForegroundColor(0, 0, 0);
 setBackgroundColor(255, 255, 255);
 run("Fill", "slice");
+run("Select None");

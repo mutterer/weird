@@ -1,4 +1,7 @@
 // create autostereogram image
+// this was the first version, create your own using ImageJ.JS
+// link: https://ij.imjoy.io/?run=https://github.com/mutterer/weird/blob/master/create_template.ijm&open=https://github.com/mutterer/weird/blob/master/autostereogram2.ijm
+//
 
 run("Fresh Start");
 setBatchMode(1);

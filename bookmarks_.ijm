@@ -1,6 +1,9 @@
 macro "bookmarks [F1]" {
 // captures current display settings 
 // as bookmarks
+// if a bookmark is selected press F1 and the display is updated
+// if no bookmark is selected, anew bookmark is added
+// using the current view.
 
 if (isOpen("Bookmarks")) selectWindow("Bookmarks");
 else Table.create("Bookmarks");
@@ -97,6 +100,8 @@ if (row>-1) {
     maxs[i] = max;
     Table.set("max_"+i+1, row, max);
   }
+  Stack.setPosition(c, s, f);
+
 // copy to clipboard for pasting into inkscape panels
 str = "open('"+File.directory+File.name+"');\n";
 Stack.getDimensions(w, h, cs, ss, fs)

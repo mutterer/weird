@@ -1,4 +1,4 @@
-macro "ascii art Tool - C000T0f16A" {
+macro "ASCII art Tool - C000T0f06AT5f06ST9f06CLd9dfLf9ff" {
   print('\\Clear');
   eval('script','WindowManager.getWindow("Log").getTextPanel().setFont(new Font("Monospaced",Font.PLAIN,12),true);');
   s=" .:-=+*#%@";

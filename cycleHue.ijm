@@ -1,8 +1,11 @@
 setBatchMode(1);
-for (i=0;i<200;i++){
+id=getImageID;
+i=0;
+while (1){
+i=i+5;
 run("Duplicate...","title=hsb");
 run("HSB Stack");
-run("Macro...", "code=v=(v+5)%256 slice");
+run("Macro...", "code=v="+i+"%256 slice");
 run("RGB Color");
 run("Copy");
 close();

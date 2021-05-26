@@ -1,5 +1,4 @@
 setBatchMode(1);
-id=getImageID;
 i=0;
 while (1){
 i=i+5;

@@ -1,3 +1,4 @@
+hues=8;
 setBatchMode(1);
 run("Duplicate...","title=temp");
 Color.setForeground("blue");floodFill(0, 0);

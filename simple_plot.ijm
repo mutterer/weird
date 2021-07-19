@@ -1,0 +1,13 @@
+min=-5; max=10;
+i=Array.getSequence(500);
+Table.reset("Plot");
+Table.setColumn("I", i);
+Table.applyMacro("X="+min+"+I*("+(max-min)+")/"+Table.size);
+Table.applyMacro("Sin=3*sin(X)");
+Table.applyMacro("Cos=3*cos(X)");
+Plot.create("Plot of Results", "X", "Y");
+Plot.add("Circle", Table.getColumn("X", "Plot"), Table.getColumn("Sin", "Plot"));
+Plot.setStyle(0, "blue,white,1.0,Circle");
+Plot.add("Circle", Table.getColumn("X", "Plot"), Table.getColumn("Cos", "Plot"));
+Plot.setStyle(1, "red,white,1.0,Circle");
+Plot.addLegend("sin(x)\ncos(x)", "Auto");

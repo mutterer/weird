@@ -11,5 +11,6 @@ run("Select All");
 run("Copy");
 close();
 selectWindow("Count Masks of copy Segmented");
-run("Paste");
 setPasteMode("Blend");
+run("Paste");
+

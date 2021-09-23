@@ -1,7 +1,7 @@
-
-c="https://upload.wikimedia.org/wikipedia/commons/";
+// insert a binary image in an 8-bit image using least significant bit only
 
 // open image and make it 1-bit dither
+c="https://upload.wikimedia.org/wikipedia/commons/";
 open(c+"3/30/ZX81.jpg");
 run("8-bit");
 run("Size...", "width=256 constrain average interpolation=Bilinear");

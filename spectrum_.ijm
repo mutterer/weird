@@ -19,22 +19,22 @@ for (i=0;i<getWidth;i++) {
 }
 if (smooth>0) run("Gaussian Blur...","sigma=&smooth");
 for (i=0;i<ticks.length;i++) {
-x=width*(ticks[i]-min)/(max-min);
-for (j=0;j<height/dash;j++)
-{
-setColor("white");
-drawLine(x, j*dash, x, (j+0.5)*dash);
-setColor("black");
-drawLine(x, (j+0.5)*dash, x, (j+1)*dash);
+  x=width*(ticks[i]-min)/(max-min);
+  for (j=0;j<height/dash;j++) {
+    setColor("white");
+    drawLine(x, j*dash, x, (j+0.5)*dash);
+    setColor("black");
+    drawLine(x, (j+0.5)*dash, x, (j+1)*dash);
+  }
+  setFont("SansSerif", 12, "bold antialiased");
+  setColor("black");
+  Overlay.drawString(ticks[i],x, getStringWidth(ticks[i]), -90.0);
+  Overlay.show();
+  setColor("white");
+  Overlay.drawString(ticks[i],x-1, getStringWidth(ticks[i])-1, -90.0);
+  Overlay.show();
 }
-setFont("SansSerif", 12, "bold antialiased");
-setColor("black");
-Overlay.drawString(ticks[i],x, getStringWidth(ticks[i]), -90.0);
-Overlay.show();
-setColor("white");
-Overlay.drawString(ticks[i],x-1, getStringWidth(ticks[i])-1, -90.0);
-Overlay.show();
-}
+
 setBatchMode(false);
 
 function lambdaToRgb(l) {

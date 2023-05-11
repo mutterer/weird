@@ -1,6 +1,5 @@
 var gamma=0.8;
 var intensityMax=255;
-var r,g,b;
 function lambdaToRgb(l) {
 	if ((l>=380)&&(l<440)) { r=-(l-440)/(440-380); g=0; b=1; }
 	else if ((l>=440)&&(l<490)) { r=0; g=(l-440)/(490-440); b=1; }
@@ -16,6 +15,7 @@ function lambdaToRgb(l) {
 	r=adjust(r, factor);
 	g=adjust(g, factor);
 	b=adjust(b, factor);
+	return Color.toString(r,g,b);
 }
 
 function adjust(color,factor) {

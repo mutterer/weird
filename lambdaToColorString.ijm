@@ -1,3 +1,4 @@
+// Wavelength 2 RGB borrowed from http://www.physics.sfasu.edu/astro/color.html
 var gamma=0.8;
 var intensityMax=255;
 function lambdaToColor(l) {
